@@ -1,0 +1,167 @@
+:root {
+    --main: rgb(0, 65, 120);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sarabun', sans-serif;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    color: rgb(215, 215, 215);
+}
+
+::-webkit-scrollbar {
+    width: 1vh;
+    border-radius: 0;
+    transition: 0.2s all;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+    border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 0;
+}
+
+.wall {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 100vw;
+    height: 100vh;
+    aspect-ratio: 16 9;
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.menu-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+    min-width: 950px;
+    width: 95%;
+    height: 45px;
+    border-radius: 1.0vh;
+    background-color: rgba(15, 15, 15, 1);
+    user-select: none;
+}
+
+.menu-container .left {
+    position: absolute;
+    display: flex;
+    left: 25px;
+    gap: 10px;
+}
+
+p.lighter {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+p.medium {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+p.bold {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.menu-container .right {
+    position: absolute;
+    display: flex;
+    right: 25px;
+    gap: 10px;
+}
+
+.menu-container .right a {
+    border-bottom: 1px solid white;
+}
+
+.menu-container .right .nav {
+    position: relative;
+    right: 0;
+    display: flex;
+    color: rgb(215, 215, 215);
+    transition: 0.2s all;
+}
+
+.menu-container .right .nav:hover {
+    color: var(--main);
+}
+
+.logo {
+    position: relative;
+    width: 50vh;
+    user-select: none;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.content {
+    position: relative;
+    display: grid;
+    gap: 5vh;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    /* border: 1px solid var(--main); */
+}
+
+.discordpage {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.con1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.message {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 50vw;
+    height: 50vh;
+    background-color: rgba(15, 15, 15, 0.5);
+    border-radius: 2.0vh;
+}
+
+.content a {
+    border: none;
+    outline: none;
+    color: aliceblue;
+}
